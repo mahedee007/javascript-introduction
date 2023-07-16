@@ -1,19 +1,11 @@
 function isleap(year){
-    if (year % 4 === 0){
-        if(year % 100 === 0){
-            if(year % 400 === 0){
-                return "yes";
-            }else{
-                return "Not"
-            }
-
-        } else{
-            return "Not";
-        }
+    const remainder = year % 4;
+    if (remainder === 0 && year % 100 === 0 && year % 400 === 0 ){
+      return true;
 
     }else{
         return "Not";
     }
 }
-var isleapYear = isleap(2000);
+var isleapYear = isleap(1900);
 console.log(isleapYear);
