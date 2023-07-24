@@ -3,7 +3,7 @@ function uniqueName(name){
     const unique = [];
     for(const element of name){
         // console.log(element);
-        if (unique.indexOf(element) == -1){
+        if (unique.includes(element) == -1){
             unique.push(element);
         }
     }
