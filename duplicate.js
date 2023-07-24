@@ -1,9 +1,9 @@
-const names = ["mahedee", "Amit", "Babu", "Himel", "Sakib", "mahedee", "sakib"]
+const names = ["mahedee", "Amit", "Babu", "Himel", "sakib", "mahedee", "sakib"]
 function uniqueName(name){
     const unique = [];
     for(const element of name){
         // console.log(element);
-        if (unique.includes(element) == -1){
+        if (unique.includes(element) === false){
             unique.push(element);
         }
     }
